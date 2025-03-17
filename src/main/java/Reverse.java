@@ -1,6 +1,9 @@
-public class Reverse {
-    public static void main(String[] args) {
-        String string = "J@va the be$t!123";
+final class Reverse {
+
+    private Reverse(){
+    }
+
+    public static String reverseString(String string) {
         char[] chars = string.toCharArray();
 
         int left = 0;
@@ -19,6 +22,6 @@ public class Reverse {
                 right--;
             }
         }
-        System.out.println(chars);
+        return new String(chars);
     }
 }
