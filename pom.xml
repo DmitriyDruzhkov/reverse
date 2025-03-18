@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>ru.roadmapschool.mityaramone</groupId>
-    <artifactId>reverse</artifactId>
+    <artifactId>com</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>

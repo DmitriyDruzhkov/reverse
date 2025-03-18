@@ -1,10 +1,15 @@
-public class Reverse {
-    public static void main(String[] args) {
-        String string = "J@va the be$t!123";
-        char[] chars = string.toCharArray();
+package com.example.myproject.util;
+
+public class StringUtil {
+
+    private StringUtil(){
+    }
+
+    public static String reverseString(String input) {
+        char[] chars = input.toCharArray();
 
         int left = 0;
-        int right = string.length() - 1;
+        int right = input.length() - 1;
 
         while (left < right) {
             if (!Character.isLetter(chars[left])) {
@@ -19,6 +24,6 @@ public class Reverse {
                 right--;
             }
         }
-        System.out.println(chars);
+        return new String(chars);
     }
 }
