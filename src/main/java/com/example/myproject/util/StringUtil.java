@@ -1,13 +1,8 @@
-package com.example.myproject;
+package com.example.myproject.util;
 
 public class StringUtil {
 
     private StringUtil(){
-    }
-
-    public static void main(String[] args) {
-        String input = "J@va the be$t!123";
-        System.out.println(reverseString(input));
     }
 
     public static String reverseString(String input) {
