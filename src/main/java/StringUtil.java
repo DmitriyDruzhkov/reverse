@@ -1,13 +1,13 @@
-final class Reverse {
+public class StringUtil {
 
-    private Reverse(){
+    private StringUtil(){
     }
 
-    public static String reverseString(String string) {
-        char[] chars = string.toCharArray();
+    public static String reverseString(String input) {
+        char[] chars = input.toCharArray();
 
         int left = 0;
-        int right = string.length() - 1;
+        int right = input.length() - 1;
 
         while (left < right) {
             if (!Character.isLetter(chars[left])) {
